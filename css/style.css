@@ -68,9 +68,7 @@ a{
     padding: 0 .5rem;
     color: white;
 }
-.album-container{
-    
-}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -80,16 +78,14 @@ a{
     padding: .5rem;
 }
 
-.card{
-    
 
-}
 .card-text > * {
     padding: .5rem 0;
 }
 .card-img-container{
     aspect-ratio: 1/1;
 }
+
 .card-img-container img{
     width: 100%;
     object-fit: cover;
@@ -111,18 +107,12 @@ a{
 
 }
 .img-container-artist img{
+    object-fit: contain;
     display: block;
     object-fit: cover;
     aspect-ratio: 1/1;
     border-radius:50%;
-   
-   
 }
-
-
-
-
-
 
 
 .side-bar .top-section{
