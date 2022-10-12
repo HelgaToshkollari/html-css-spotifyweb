@@ -84,6 +84,9 @@ a{
     
 
 }
+.card-text > * {
+    padding: .5rem 0;
+}
 .card-img-container{
     aspect-ratio: 1/1;
 }
@@ -97,6 +100,23 @@ a{
 .card-text{
     text-align: center;
     color: white;
+    
+}
+.img-container-artist{
+    width:100% ;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+
+}
+.img-container-artist img{
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius:50%;
+   
+   
 }
 
 
