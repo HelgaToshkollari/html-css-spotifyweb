@@ -3,3 +3,160 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+a{
+    text-decoration: none;
+}
+.top-container{
+    /* height: calc(100vh - 100px); */
+    flex-grow: 1;
+    display: flex;
+}
+.side-bar{
+    background-color: rgb(53, 51, 51);
+    color: white;
+    width: 60px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+.bottom-navbar{
+    flex-shrink: 0;
+    height: 100px;
+}
+.main-container{
+    flex-grow: 1;
+    overflow: auto;
+
+}
+.upgrade-container{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(3, 3, 37);
+    padding: 2rem;
+}
+.btn{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: .5rem 1.5rem;
+}
+.btn-no-bgc{
+    background-color: transparent;
+}
+.upgrade-container a{
+    color: white;   
+}
+.sub-main-container{
+    background-color: rgb(48, 67, 121);
+}
+
+.tab-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tab-container li a{
+    padding: 0 .5rem;
+    color: white;
+}
+.album-container{
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1-2{
+    flex-basis: calc(100% /2);
+    padding: .5rem;
+}
+
+.card{
+    
+
+}
+.card-img-container{
+    aspect-ratio: 1/1;
+}
+.card-img-container img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 1/1;
+
+}
+.card-text{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+.side-bar .top-section{
+    flex-shrink: 0;
+}
+.side-bar .middle-section{
+    overflow: auto;
+    flex-grow: 1;
+}
+.side-bar .middle-section .playlist-container{
+    display: none;
+}
+.side-bar .bottom-section{
+    flex-shrink: 0;
+}
+.side-bar .sidebar-list{
+    list-style: none;
+}
+.side-bar .sidebar-list a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding: .5rem;
+    justify-content: center;
+
+}
+.l-logo{
+    width: 150px;
+    display: none;
+}
+.l-logo img{
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+.s-logo{
+    width: 100%;
+}
+.s-logo img{
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+.side-bar .sidebar-list .li-text{
+    display: none;
+}
+
+.li-img{
+   width: 30px;
+    
+}
+.li-img img{
+    width: 100%;
+    object-fit: scale-down;
+    display: block;
+    aspect-ratio: 1/1;
+}
