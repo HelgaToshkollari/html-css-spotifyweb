@@ -97,15 +97,16 @@ a{
 }
 .second-img-container{
     position: absolute;
-    bottom: 50%;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    width: 100%;
     display: none;
-    background-color: rgba(179, 71, 71, 0.377);
+    background-color: rgba(42, 37, 37, 0.525);
 }
 .second-img-container i{
-    position: absolute;
     color: white;
     font-size: 5rem;
 
