@@ -1,3 +1,11 @@
+:root{
+    --topbar: #080B12ff;
+    --playbar: #282828ff;
+    --green-yellow: #ADFF2Fff;
+    --main-bgc: #141922ff;
+    --sidebar: #000000ff;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -15,21 +23,15 @@ a{
     text-decoration: none;
 }
 .top-container{
-    /* height: calc(100vh - 100px); */
     flex-grow: 1;
     display: flex;
+    overflow: auto;
 }
-.side-bar{
-    background-color: rgb(53, 51, 51);
-    color: white;
-    width: 60px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-}
+
 .bottom-navbar{
     flex-shrink: 0;
     height: 100px;
+    overflow: auto;
 }
 .main-container{
     flex-grow: 1;
@@ -39,7 +41,7 @@ a{
 .upgrade-container{
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(3, 3, 37);
+    background-color:var(--topbar);
     padding: 2rem;
 }
 .btn{
@@ -54,9 +56,12 @@ a{
     color: white;   
 }
 .sub-main-container{
-    background-color: rgb(48, 67, 121);
+    background-color: var(--main-bgc);
+    padding: 0 1rem;
 }
-
+.tab-container {
+    padding: 1rem;
+}
 .tab-container ul{
     list-style: none;
     display: flex;
@@ -64,9 +69,20 @@ a{
     flex-wrap: wrap;
 }
 
-.tab-container li a{
+.tab-container li a h4{
     padding: 0 .5rem;
+    color: rgb(121, 121, 121);
+    line-height: 3rem;
+    
+}
+.sub-main-container h1{
     color: white;
+    padding: .5rem;
+}
+.sub-main-container h3{
+    color: rgb(121, 121, 121);
+    padding: 0 .5rem;
+    padding-bottom: 1rem;
 }
 
 .row{
@@ -79,12 +95,8 @@ a{
 }
 
 
-.card-text > * {
-    padding: .5rem 0;
-}
 .card-img-container{
     position: relative;
-    overflow: hidden;
     aspect-ratio: 1/1;
 }
 
@@ -108,17 +120,24 @@ a{
 }
 .second-img-container i{
     color: white;
-    font-size: 5rem;
-
+    font-size: 4rem;
 }
+
 .card-img-container:hover .second-img-container{
-    display: flex;
-    
+    display: flex;   
 }
 
-.card-text{
+.card-text h4{
     text-align: center;
     color: white;
+    padding-top: 1rem ;
+    
+}
+.card-text h5{
+    text-align: center;
+    color: rgb(105, 105, 105);
+    padding-top: .5rem ;
+    
     
 }
 .img-container-artist{
@@ -133,10 +152,41 @@ a{
     aspect-ratio: 1/1;
     border-radius:50%;
 }
+.small-bar{
+    height: 2px;
+    width: 100%;
+    background-color: lightslategray;
+    margin: .5rem 0;
+}
+.font-3{
+    font-size: 3rem;
+}
+.add-playlist{
+    display: flex;
+    
+
+}
+.add-playlist h5{
+    margin-left: .5rem;
+    line-height: 3rem;
+
+}
+.side-bar{
+    background-color: var(--sidebar);
+    color: white;
+    width: 60px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
 
 
 .side-bar .top-section{
     flex-shrink: 0;
+    margin-bottom: 1rem;
+
+    
 }
 .side-bar .middle-section{
     overflow: auto;
@@ -150,16 +200,19 @@ a{
 }
 .side-bar .sidebar-list{
     list-style: none;
+  
 }
 .side-bar .sidebar-list a{
     color: white;
     text-decoration: none;
-    display: flex;
-    padding: .5rem;
-    justify-content: center;
-
+    display: flex;   
+}
+.sidebar-list li{
+    padding: .5rem 0;
 }
 .l-logo{
+    display: flex;
+    padding-bottom: .5rem;
     width: 150px;
     display: none;
 }
@@ -167,9 +220,11 @@ a{
     width: 100%;
     object-fit: contain;
     display: block;
+   
 }
 .s-logo{
     width: 100%;
+    padding-bottom: 1rem;
 }
 .s-logo img{
     width: 100%;
@@ -181,12 +236,75 @@ a{
 }
 
 .li-img{
-   width: 30px;
+   width: 100%;
+   height: 100%;
+   margin-right: .5rem;
     
 }
 .li-img img{
     width: 100%;
     object-fit: scale-down;
     display: block;
-    aspect-ratio: 1/1;
+   
+}
+.bottom-navbar{
+    background-color: var(--playbar);
+
+}
+.player-bar{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.player-bar h5{
+    color: white;
+   
+}
+.left-bar{
+    display: flex;
+    align-items: center;
+}
+.img-left-bar{
+    width: 30px;
+    display: flex;
+    margin-right: .5rem;
+}
+.font-1{
+    font-size: 1rem;
+}
+.font-2{
+    font-size: 2rem;
+}
+.img-left-bar img{
+    width: 100%;
+}
+.c-icon-white{
+    color: white;
+}
+.c-icon-grey{
+    color: lightslategray;
+}
+.icons-player{
+    display: flex;
+    margin: .5rem 0;
+}
+.icons-player i{
+   padding: 0 .5rem;
+}
+
+.song-bar-container{
+    padding: .2rem .5rem;
+    position: relative;
+}
+.song-bar-bg{
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgb(104, 104, 104) ;
+}
+
+.song-bar-container .music-overlay{
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgb(215, 215, 215);
+    width: 10%;
 }
