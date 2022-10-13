@@ -83,7 +83,8 @@ a{
     padding: .5rem 0;
 }
 .card-img-container{
-    
+    position: relative;
+    overflow: hidden;
     aspect-ratio: 1/1;
 }
 
@@ -94,6 +95,26 @@ a{
     aspect-ratio: 1/1;
 
 }
+.second-img-container{
+    position: absolute;
+    bottom: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: none;
+    background-color: rgba(179, 71, 71, 0.377);
+}
+.second-img-container i{
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+
+}
+.card-img-container:hover .second-img-container{
+    display: flex;
+    
+}
+
 .card-text{
     text-align: center;
     color: white;
