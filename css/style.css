@@ -31,7 +31,8 @@ a{
 .bottom-navbar{
     flex-shrink: 0;
     height: 100px;
-    overflow: auto;
+    background-color: var(--playbar);
+    
 }
 .main-container{
     flex-grow: 1;
@@ -43,6 +44,9 @@ a{
     justify-content: flex-end;
     background-color:var(--topbar);
     padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 .btn{
     border: 1px solid white;
@@ -179,14 +183,13 @@ a{
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    overflow: auto;
 }
 
 
 .side-bar .top-section{
     flex-shrink: 0;
     margin-bottom: 1rem;
-
-    
 }
 .side-bar .middle-section{
     overflow: auto;
@@ -247,10 +250,7 @@ a{
     display: block;
    
 }
-.bottom-navbar{
-    background-color: var(--playbar);
 
-}
 .player-bar{
     padding: 1rem;
     display: flex;
@@ -265,7 +265,7 @@ a{
     align-items: center;
 }
 .img-left-bar{
-    width: 30px;
+    width: 50px;
     display: flex;
     margin-right: .5rem;
 }
@@ -282,19 +282,26 @@ a{
     color: white;
 }
 .c-icon-grey{
-    color: lightslategray;
+    color: rgb(122, 122, 122);
+}
+.center-bar{
+    margin: 0 1rem;
 }
 .icons-player{
     display: flex;
     margin: .5rem 0;
 }
 .icons-player i{
-   padding: 0 .5rem;
+   padding: 0 1rem;
 }
-
+.pad-05{
+    padding: 0 .5rem;
+}
 .song-bar-container{
     padding: .2rem .5rem;
     position: relative;
+    width: 100%;
+    
 }
 .song-bar-bg{
     height: 4px;
@@ -306,5 +313,22 @@ a{
     height: 4px;
     border-radius: 2px;
     background-color: rgb(215, 215, 215);
-    width: 10%;
+    width: 30%;
+   
+}
+.line-height-player{
+    line-height: 5px;
+}
+.bar-width{
+    width: 7vw;
+}
+.right-bar{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.player-bar-container{
+    display: flex;
+    align-items: center;
+    padding-top: .5rem;
 }
